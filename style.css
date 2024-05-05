@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --main-color:#31054A;
+    --white:#ffffff;
+    --object-color:#E56A20;
+    --background:rgb(137, 251, 247);
+}
+
+html{
+    font-size: 80%;
+}
+
+::selection{
+    background-color: var(--object-color);
+    color: var(--white);
+}
+body{
+    background:var(--background)
+}
+.heading{
+    font-size: 3rem;
+    color: var(--object-color);
+    text-shadow: 0 1rem 2rem rgb(0, 0,0,1,);
+    font-family: "Poetsen One", sans-serif;
+}
+/* main start  */
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.calculator .box-container{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--main-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: rgb(145, 114, 210);
+    align-items: center;
+}
+.calculator .box-container .box input{
+    width: 19rem;
+    height: 5rem;
+    font-size: 3rem;
+    color: var(--main-color);
+    background-color:var(--background);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    
+}
+.calculator .box-container .box button{
+    width: 5rem;
+    height: 5rem;
+    margin: .1rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.calculator .box-container .box button:hover{
+    border-radius: 0;
+    transition: .4s linear;
+}
+.calculator .box-container .box .num{
+    background-color: var(--object-color);
+    color: var(--white);
+}
+.calculator .box-container .box .operator{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+/* main end  */
+
+/* media query start  */
+@media(max-width:382px){
+    html{
+        font-size: 60%;
+    }
+}
+/* media query end  */
